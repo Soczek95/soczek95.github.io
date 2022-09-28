@@ -9,7 +9,7 @@ body {
 	align-items: center;
 }
 .dash {
-	border: 4px dashed darkblue;
+	border: 5px dashed darkblue;
 	background-color: turquoise;
 	box-sizing: border-box;
 	width: 400px;
@@ -22,7 +22,7 @@ body {
 }
 
 .dotted {
-	border: 4px dotted darkblue;
+	border: 5px dotted darkblue;
 	background-color: turquoise;
 	box-sizing: border-box;
 	width: 400px;
