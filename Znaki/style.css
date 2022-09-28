@@ -38,13 +38,12 @@ body {
 	width: 200px;
 	height: 200px;
 	border-radius: 100%;
-	display: flex;
-	justify-content: center;
-	align-content: center;
 }
 
 .biały {
 	background-color: white;
 	width: 150px;
 	height: 30px;
+	margin-top: 85px;
+	margin-left: 25px;
 }
