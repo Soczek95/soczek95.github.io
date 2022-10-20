@@ -1,10 +1,18 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
 header {
 	background: #829eb9;
 	height: 50px;
 	font-family: Arial;
 	text-align: center;
+	padding: 5px;
 }
 nav {
+	padding: 25px;
 	background: #b3c6d9;
 	height: 600px;
 	width: 25%;
@@ -22,7 +30,53 @@ footer {
 	font-family: Arial;
 	text-align: right;
 	clear: both;
+	padding: 10px;
 }
 img {
 	margin-top: 25px;
+}
+
+.test {
+	font-weight: bold;
+	font-size: 40px;
+	float: left;
+	width: 100%;
+}
+a {
+	text-decoration: none;
+	color: black;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: royalblue;
+}
+input {
+	clear: both;
+}
+
+input {
+	margin: 10px;
+	width: 30%;
+	height: 25px;
+}
+
+button {
+	width: 10%;
+	height: 25px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.zasady {
+	font-size: 20px;
+	padding-top: 10px;
+	padding-left: 50px;
+}
+.test-hasla {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+ul {
+	text-align: left;
 }
