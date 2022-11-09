@@ -1,0 +1,195 @@
+html {
+    font:16px Arial Black ;
+    padding:    0;
+    margin: 0;
+}
+
+body {
+    padding: 0; 
+    margin: 0; 
+    overflow-x: hidden;
+    background: #A6A4A4;
+}
+
+.site-nav {
+    height: 20px; 
+    width: 100%; 
+    background:#595656; 
+    display: flex; 
+    justify-content: flex-end;  
+    align-items: center;
+    padding: 10px; 
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.site-menu-trigger {
+    border: 0;  
+    border-radius: 5px; 
+    background: #F2F2F2;
+}
+
+.site-menu {
+    display: flex; 
+    box-sizing: border-box; 
+    position: absolute; 
+    top: 110px; 
+    right: 0; 
+    height: auto; 
+    width: 300px;
+    border-radius: 10px;
+    background: #BF5A50;
+    transform: translateX(100%);
+    transition: 0.3s transform ease-in-out;
+    z-index: 9;
+    padding-bottom: 20px;
+}
+
+.site-menu ul {
+
+    padding: 0;
+    list-style-type: none;
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    
+}
+.site-menu li{
+    background: #F2F2F2;
+    color: #696e9e;
+    margin-top: 20px;
+    border-radius: 5px;
+    flex-basis:100%;
+    display: flex;
+    height: 50px;
+    
+
+}
+
+.site-menu a {
+    display: flex;
+    padding: 15px;
+    box-sizing: border-box;
+    text-decoration: none;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    color: black;
+
+}
+
+.site-menu a:hover{
+    background: #595656;
+    color: white;
+}
+
+.site-menu-trigger:focus ~ .site-menu, .site-menu:hover {
+    transform: translateX(0);
+}
+
+section {
+    margin: 5%;
+    margin-top: 5%;
+    box-sizing: border-box;
+    width: 90%;
+    height: 100%; 
+    border-radius: 10px;
+    background: #F2F2F2;
+    text-align: center;
+   
+
+
+} 
+
+header {
+    padding: 20px;
+    background: color #A6A4A4;
+    width:100%; 
+    height: 50px;
+    font:35px Arial black;
+    text-align: center; 
+    font-weight: 900;
+
+    
+}
+
+footer{
+    width:100%;
+    height: 100px;
+    clear: both;
+    
+
+}
+object-list {
+    padding:30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.main-menu object {  
+    flex-basis:350px;
+    background: #D9D9D9;
+    display: flex;
+    box-sizing: border-box;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+.main-menu a {
+    display: flex;
+    padding: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    align-items: top;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+.main-menu a:hover{
+    background: #595656;
+    color: white;
+}
+
+
+content{
+    padding:30px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    text-align: left;
+    align-content: flex-start;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    line-height: 160%;
+}
+
+label{
+    text-align: center; 
+    margin-top: 7%;
+    font-size: 50px; 
+    line-height: 160%;
+    margin-left: 1%;
+}
+

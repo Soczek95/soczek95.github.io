@@ -1,0 +1,81 @@
+html {
+	font: 16px Arial;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+body {
+	background-color: rgb(244, 164, 96);
+	font: Arial;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+
+.header {
+	font-size: 200%;
+	color: white;
+	width: 75%;
+	height: 150px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	float: left;
+}
+
+.logo {
+	width: 25%;
+	height: 150px;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+img {
+	height: 150px;
+	max-width: 100%;
+}
+
+.main {
+	background-color: rgb(128, 0, 0);
+	text-transform: uppercase;
+	float: left;
+	width: 100%;
+	max-width: 100%;
+	padding: 50px;
+}
+
+table {
+	border: 1px;
+	border-color: black;
+	border-collapse: collapse;
+	width: 100%;
+	padding: 5px;
+}
+
+.s1 {
+	width: 20%;
+	float: left;
+	padding-top: 90px;
+	text-align: left;
+}
+
+.s2 {
+	margin-top: 20px;
+	width: 60%;
+	float: left;
+	text-align: center;
+	font-size: 150%;
+}
+
+.s3 {
+	margin-right: 0%;
+	width: 20%;
+	float: left;
+	padding-top: 90px;
+	text-align: right;
+}
+.s2:hover {
+	color: rgb(169, 169, 169);
+}

@@ -1,0 +1,42 @@
+html {
+	font: 16px Arial Black;
+	padding: 0;
+	margin: 0;
+}
+body {
+	padding: 0%;
+	margin: 0%;
+}
+.naglowek {
+	margin-left: 5%;
+	background: white;
+	box-sizing: border-box;
+	height: auto;
+	width: 90%;
+	text-align: center;
+	border-radius: 10px;
+}
+.przycisk {
+	margin-left: 20%;
+	background: white;
+	box-sizing: border-box;
+	height: auto;
+	width: 60%;
+	text-align: center;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.przycisk a {
+	text-decoration: none;
+	align-content: center;
+	text-align: flex-end, center;
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+	color: black;
+	display: flex;
+	justify-content: center;
+}
+.przycisk:hover {
+	background-color: lightgrey;
+}

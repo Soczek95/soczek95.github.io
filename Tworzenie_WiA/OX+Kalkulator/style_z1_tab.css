@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+table {
+	border: 1px solid black;
+	margin: 10px;
+}
+th,
+td {
+	box-sizing: content-box;
+	width: 15px;
+	height: 15px;
+	border: 1px solid black;
+	text-align: center;
+}
+.ttt {
+	text-transform: uppercase;
+	padding: 10px;
+	background-color: lightcyan;
+}
+th {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.calc {
+	border: 2px solid black;
+}
+.button {
+	text-transform: uppercase;
+	padding: 10px;
+	background-color: lightgreen;
+}
+.wynik {
+	text-align: right;
+	background-color: white;
+}
+.left {
+	text-align: left;
+	padding: 10px;
+	text-transform: uppercase;
+	padding: 10px;
+	background-color: lightgreen;
+}
+.title {
+	padding-left: 15px;
+	padding-right: 15px;
+}
