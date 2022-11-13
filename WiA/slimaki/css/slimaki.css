@@ -71,3 +71,7 @@ footer {
 	color: brown;
 	font-weight: bold;
 }
+
+img {
+	max-height: 60vh;
+}
