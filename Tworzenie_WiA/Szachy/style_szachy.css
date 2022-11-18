@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	margin: 10px;
+	border: 3px solid black;
+	border-collapse: collapse;
+
+	/* SPOSOB 1 */
+
+	/* background-color: antiquewhite; */
+}
+
+td {
+	width: 75px;
+	height: 75px;
+	text-align: center;
+	font-size: 55px;
+	border-collapse: collapse;
+}
+.b {
+	background-color: darkgray;
+}
+.w {
+	background-color: rgb(72, 86, 112);
+}
+.szachy tr:nth-child(even) td:nth-child(odd) {
+	background-color: rgb(72, 86, 112);
+}
+.szachy tr:nth-child(odd) td:nth-child(even) {
+	background-color: rgb(72, 86, 112);
+}
+
+/* SPOSOB 2 */
+
+.szachy tr:nth-child(even) td:nth-child(even) {
+	background-color: antiquewhite;
+}
+.szachy tr:nth-child(odd) td:nth-child(odd) {
+	background-color: antiquewhite;
+}

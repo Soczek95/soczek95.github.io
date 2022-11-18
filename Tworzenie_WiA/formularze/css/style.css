@@ -1,0 +1,48 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+time {
+	float: right;
+	font-size: 10px;
+}
+
+form {
+	margin: 15px;
+	padding: 10px;
+}
+table.logowanie {
+	margin: 10px;
+	border: 0px;
+}
+td.logowanie {
+	padding: 3px;
+	background-color: white;
+	border: 0px;
+}
+
+table {
+	margin: 10px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+td,
+th {
+	border: 1px solid black;
+	padding: 10px;
+}
+th {
+	background-color: grey;
+}
+
+tr:nth-child(even) {
+	background-color: antiquewhite;
+}
+tr:nth-child(odd) {
+	background-color: lightgray;
+}
+fieldset {
+	width: 300px;
+}

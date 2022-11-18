@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Zajęcia 25.10.2022 -->
+    <title>Formularze</title>
+</head>
+
+<body>
+
+    <form>
+        <label>Imie</label>
+        <br>
+        <input type="text" name="imie">
+        <br>
+        <label>Nazwisko</label>
+        <br>
+        <input type="text" name="nazwisko">
+        <br>
+        <label>Płeć</label>
+        <br>
+        <input type="radio" name="plec" value="mezczyzna">
+        <label>Mężczyzna</label>
+        <input type="radio" name="plec" value="kobieta">
+        <label>Kobieta</label>
+        <br>
+        <label>Wiek</label>
+
+        <select name="wiek">
+            <option>0-17</option>
+            <option>18-21</option>
+            <option>22-26</option>
+            <option>26-40</option>
+            <option>41-65</option>
+        </select>
+        <br>
+        <label>Uwagi</label><br>
+        <textarea name="uwagi" cols="21" rows="5" placeholder="Wpisz uwagi"></textarea>
+        <br>
+        <input type="submit" value="Wyślij">
+    </form>
+    <form>
+        <label>Wybierz język:</label>
+        <select name="języki" multiple="multiple" size="5">
+            <option value="j.angielski">j.angielski
+            </option>
+            <option value="j.francuski">j.francuski
+            </option>
+            <option value="j.hiszpanski">j.hiszpanski
+            </option>
+            <option value="j.wloski">j.wloski</option>
+            <option value="j.niemiecki">j.niemiecki</option>
+        </select>
+        <br>
+        <input type="submit" value="Wyślij">
+    </form>
+    <form>
+        <label>Lista podzielona na grupy opcji</label>
+        <br>
+        <select name="grupa_wiekowa" size="8">
+            <optgroup label="Dziewczęta">
+                <option value="K 12-14">12-14</option>
+                <option value="K 15-17">15-17</option>
+                <option value="K 18>">Powyżej 18</option>
+            <optgroup label="Chłopcy">
+                <option value="M 12-14">12-14</option>
+                <option value="M 15-17">15-17</option>
+                <option value="M 18>">Powyżej 18</option>
+
+        </select>
+        <br>
+        <input type="submit" value="Wyślij">
+    </form>
+
+    <form>
+        <h3>Lista podpowiedzi</h3>
+        <label>Marka samochodu</label>
+        <br>
+        <input type="text" name="samochody" list="marka">
+        <datalist id="marka">
+            <option>Ford</option>
+            <option>Fiat</option>
+            <option>Ferrari</option>
+            <option>Mercedes</option>
+            <option>Audi</option>
+            <option>Aston Martin</option>
+            <option>Mclaren</option>
+        </datalist>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend align="center">Formularz logowania</legend>
+            <table class="logowanie">
+                <tr class="logowanie">
+                    <td class="logowanie">Podaj login</td class="56">
+                    <td class="logowanie"><input type="text" name="login" placeholder="Login" required></td>
+                </tr>
+                <tr class="logowanie">
+                    <td class="logowanie">Podaj hasło</td>
+                    <td class="logowanie"><input type="password" name="haslo" placeholder="Hasło" required></td>
+                </tr>
+                <tr class="logowanie">
+                    <td class="logowanie"> <input type="submit" value="Zaloguj"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <table>
+        <tr>
+            <td>Przycisk aktywny</td>
+            <td>Przycisk nieaktywny</td>
+        </tr>
+        <tr>
+            <form>
+                <td><input type="button" value="Prześlij dane"></td>
+                <td><input type="button" value="Prześlij dane" disabled></td>
+            </form>
+        </tr>
+    </table>
+
+    <form>
+        <fieldset>
+            <legend>Klawisze skrótów</legend>
+            <p>
+                <input type="radio" name="wykształcenie" value="Podstawowe" accesskey="P">
+                Podstawowe [skrót Alt+P]
+            </p>
+            <p>
+                <input type="radio" name="wykształcenie" value="Średnie" accesskey="S">
+                Średnie [skrót Alt+S]
+            </p>
+            <p>
+                <input type="radio" name="wykształcenie" value="Wyższe" accesskey="W">
+                Wyższe [skrót Alt+W]
+            </p>
+            <input type="submit" value="Wyślij">
+        </fieldset>
+    </form>
+
+    <table>
+        <tr>
+            <th>Atrybut</th>
+            <th>Opis</th>
+            <th>Wygląd</th>
+            <th></th>
+        </tr>
+        <tr>
+            <form>
+                <td>type="email"</td>
+                <td>Wprowadzenie adresu e-mail (@)...(.)</td>
+                <td>
+                    <input type="email">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>type="url"</td>
+                <td>Wprowadzenie adresu URL (http://, https://)</td>
+                <td>
+                    <input type="url">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>type="number"</td>
+                <td>Wprowadzenie liczb, można określić zakres</td>
+                <td>
+                    <input type="number">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>type="date"</td>
+                <td>Wprowadzenie daty</td>
+                <td>
+                    <input type="date">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>type="time"</td>
+                <td>Wprowadzenie czasu</td>
+                <td>
+                    <input type="time">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>type="week"</td>
+                <td>Wybór tygodnia w danym roku</td>
+                <td>
+                    <input type="week">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>type="month"</td>
+                <td>Wybór miesiąca w danym roku</td>
+                <td>
+                    <input type="month">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>type="file"</td>
+                <td>Pole wyboru pliku do pobrania</td>
+                <td>
+                    <input type="file">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>type="image"</td>
+                <td>Tworzy przycisko pod postacią rysunku</td>
+                <td>
+                    <input type="image">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>type="serch"</td>
+                <td>Wprowadzenie szukanego zapytania</td>
+                <td>
+                    <input type="search">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>type="color"</td>
+                <td>wybieranie koloru</td>
+                <td>
+                    <input type="color">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>type="range"</td>
+                <td>Tworzy przycisko pod postacią rysunku</td>
+                <td>
+                    <input type="range">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>required</td>
+                <td>Wymusza wypełnienie pola</td>
+                <td>
+                    <input type="text" required>
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>patern</td>
+                <td>Określenie wzorca</td>
+                <td>
+                    <input type="range" pattern="[13-27]{5}">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>disabled</td>
+                <td>Określenie elementu jako nieaktywny</td>
+                <td>
+                    <input type="button" value="Prześlij dane" disabled>
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>accesskey="A"</td>
+                <td>Ustawienie skrótu klawiszowego do pola Alt+A</td>
+                <td>
+                    <input type="radio" accesskey="A">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>autofocus</td>
+                <td>Ustawienie kursora w określonym polu formularza</td>
+                <td>
+                    <input type="radio" name="1" autofocus>
+                    <input type="radio" name="1">
+                    <input type="radio" name="1">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+        <tr>
+            <form>
+                <td>autocomplete</td>
+                <td>Wyłączanie autouzpełniania w wybranych polach lub całym formularzu. Przyjmuje wartości on lub off
+                </td>
+                <td>
+                    <input type="text" name="1" autocomplete="off">
+                    <input type="text" name="1" autocomplete="on">
+                </td>
+                <td> <input type="submit" value="Wyślij"></td>
+            </form>
+        </tr>
+
+    </table>
+
+
+</body>
+
+</html>

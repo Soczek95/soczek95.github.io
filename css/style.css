@@ -28,7 +28,7 @@ aside {
 	background-color: rgb(64, 63, 62);
 	display: flex;
 	justify-content: center;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 main {

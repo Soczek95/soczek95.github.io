@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodziarnia</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <p class="baner"> <a href="index.html">Lodziarnia Sączewskich</a></p>
+    </header>
+    <main>
+        <aside>
+            <p class="smaki_baner">Dzisiejsze smaki</p>
+            <p class="smaki">Smaki standardowe</p>
+            <ul>
+                <li>Czekoladowe</li>
+                <li>Truskawkowe</li>
+                <li>Waniliowe</li>
+                <li>Śmietankowe</li>
+                <li>Karmelowe</li>
+            </ul>
+            <p class="smaki">Smaki dodatowe</p>
+            <ul>
+                <li>Kokosowe</li>
+                <li>Ciasteczkowe</li>
+                <li>Marchewkowe</li>
+                <li>Borówkowe</li>
+                <li>Truskawka ze Szpinakiem</li>
+            </ul>
+        </aside>
+        <section class="icecream">
+            <section class="title">
+                <p>
+                    Lody gałkowe
+                </p>
+            </section>
+            <section class="form">
+                <form>
+                    <fieldset class="smaki">
+                        <legend>Smaki</legend>
+                        <p class="cena">Cena gałki: 2,5 zł</p>
+                        <label for="liczba gałek">Liczba gałek</label>
+                        <input type="range" name="Liczba gałek" list="tickmarks" pattern="[1-5]{1}">
+                        <datalist id="tickmarks">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                        </datalist>
+                        <label for="liczba gałek">Smak</label>
+                        <select name="Smaki" multiple="multiple" size="10">
+                            <option>Czekoladowe</option>
+                            <option>Truskawkowe</option>
+                            <option>Waniliowe</option>
+                            <option>Śmietankowe</option>
+                            <option>Karmelowe</option>
+                            <option>Kokosowe</option>
+                            <option>Ciasteczkowe</option>
+                            <option>Marchewkowe</option>
+                            <option>Borówkowe</option>
+                            <option>Truskawka ze Szpinakiem</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset class="dodatki">
+                        <legend>Dodatki</legend>
+                        <p class="dodatki">Polewa<input type="checkbox" style="margin:10px ;"></p>
+                        <p class="dodatki">Posypka<input type="checkbox" style="margin:10px ;"></p>
+                        <p class="dodatki">Bita śmietana<input type="checkbox" style="margin:10px ;"></p>
+                        <p class="dodatki">Łyżeczka<input type="checkbox" style="margin:10px ;"></p>
+                        <p class="dodatki">Chrupiąca rurka<input type="checkbox" style="margin:10px ;"></p>
+
+                </form>
+            </section>
+            <section class="summary">
+                <form>
+                    <p> Wartość Rachunku: <input type="text" disabled></p>
+                    <p> Zapłacono: <input type="text" disabled></p>
+                    <p> Reszta: <input type="text" disabled></p>
+                    <input type="submit" value="Złóż zamówienie">
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

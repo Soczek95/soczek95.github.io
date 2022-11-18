@@ -32,7 +32,7 @@ aside {
 	justify-content: center;
 	position: fixed;
 	top: 15vh;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 main {
