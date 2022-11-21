@@ -82,7 +82,6 @@ div.button_menu {
 	padding: 5px;
 	border: 1px solid black;
 	background-color: white;
-	transition: 0.3s;
 }
 
 div.button:hover div.button_menu {
