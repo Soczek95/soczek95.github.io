@@ -57,6 +57,9 @@ p.button {
 main {
 	width: 100%;
 	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 footer {
 	width: 100%;
@@ -69,7 +72,7 @@ footer {
 }
 
 div.button_menu {
-	/* opacity: 0; */
+	opacity: 0;
 	visibility: hidden;
 	width: max-content;
 	height: max-content;
@@ -82,12 +85,22 @@ div.button_menu {
 	padding: 5px;
 	border: 1px solid black;
 	background-color: white;
+	transition: 0.3s;
 }
 
 div.button:hover div.button_menu {
-	/* opacity: 100%; */
+	opacity: 100%;
 	visibility: visible;
 }
 div.button:hover::after div.button_menu {
 	opacity: 0%;
+}
+
+iframe {
+	background-color: white;
+}
+
+img {
+	width: max-content;
+	height: 80%;
 }
