@@ -69,7 +69,8 @@ footer {
 }
 
 div.button_menu {
-	opacity: 0;
+	/* opacity: 0; */
+	visibility: hidden;
 	width: max-content;
 	height: max-content;
 	position: absolute;
@@ -85,7 +86,8 @@ div.button_menu {
 }
 
 div.button:hover div.button_menu {
-	opacity: 100%;
+	/* opacity: 100%; */
+	visibility: visible;
 }
 div.button:hover::after div.button_menu {
 	opacity: 0%;
