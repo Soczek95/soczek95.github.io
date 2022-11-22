@@ -1,0 +1,80 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+p {
+	font-weight: bold;
+	font-size: 20px;
+}
+main {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+aside {
+	width: max-content;
+	min-width: 15vw;
+	position: fixed;
+	height: 100vh;
+}
+nav.top {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 20px;
+	width: 100%;
+	height: 100vh;
+	background-color: aqua;
+}
+
+nav.context {
+	padding-top: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: red;
+	z-index: -1;
+	transition: 0.3s;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+div.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 100%;
+	height: 50px;
+	background-color: blueviolet;
+}
+div.first:hover ~ nav.first,
+nav.first:hover {
+	top: 0;
+	left: 15vw;
+}
+div.second:hover ~ nav.second,
+nav.second:hover {
+	top: 0;
+	left: 15vw;
+}
+div.context-button {
+	width: 80%;
+	height: 50px;
+	background-color: bisque;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section {
+	width: 85vw;
+	margin-left: 15vw;
+	background-color: blueviolet;
+	height: 100vh;
+}
