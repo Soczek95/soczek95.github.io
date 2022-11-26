@@ -93,3 +93,17 @@ p.author {
 img {
 	height: 90%;
 }
+
+img:hover {
+	cursor: pointer;
+}
+
+table:hover,
+th:hover,
+td:hover {
+	cursor: crosshair;
+}
+
+p.definition:hover {
+	cursor: help;
+}
