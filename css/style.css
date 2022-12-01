@@ -130,7 +130,7 @@ p.subjects {
 	/* color: black; */
 	text-align: center;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 2vw;
 }
 
 a.subject {
@@ -139,7 +139,7 @@ a.subject {
 	border-radius: 10px;
 	display: flex;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	flex-direction: column;
 	padding: 10px;
@@ -172,4 +172,9 @@ a.home_button {
 a.home_button > img {
 	width: 70px;
 	height: 70px;
+}
+i {
+	font-size: 10vw;
+	text-decoration: none;
+	color: white;
 }
