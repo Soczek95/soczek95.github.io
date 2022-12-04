@@ -258,11 +258,13 @@ i.homebutton {
 	}
 
 	section.main_area {
+		padding: 25px;
 		width: 100vw;
 		left: 0;
 	}
 
 	div.subjects {
+		height: 140px;
 		width: 80%;
 		margin: 10px;
 	}
