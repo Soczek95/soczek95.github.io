@@ -72,7 +72,7 @@ footer {
 }
 
 p.title {
-	font-size: 8vw;
+	font-size: 6vw;
 	color: white;
 	font-weight: bold;
 	width: 100%;
@@ -240,7 +240,7 @@ div.row {
 	justify-content: space-around;
 }
 i.homebutton {
-	font-size: 7vw;
+	font-size: 6vw;
 }
 @media (max-width: 576px) {
 	div.row {
@@ -265,6 +265,12 @@ i.homebutton {
 	div.subjects {
 		width: 80%;
 		margin: 10px;
+	}
+	p.title {
+		font-size: 12vw;
+	}
+	i.homebutton {
+		font-size: 10vw;
 	}
 	a.subject {
 		flex-direction: row;
