@@ -246,6 +246,7 @@ i.homebutton {
 @media (max-width: 576px) {
 	div.row {
 		margin-top: 5vh;
+		margin-bottom: 5vh;
 		flex-direction: column;
 	}
 	div.start {
