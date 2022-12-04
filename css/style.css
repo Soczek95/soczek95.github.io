@@ -263,6 +263,7 @@ i.homebutton {
 	}
 
 	div.subjects {
+		height: 140px;
 		width: 80%;
 		margin: 10px;
 	}
