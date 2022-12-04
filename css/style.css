@@ -245,6 +245,7 @@ i.homebutton {
 }
 @media (max-width: 576px) {
 	div.row {
+		margin-top: 5vh;
 		flex-direction: column;
 	}
 	div.start {
@@ -254,8 +255,14 @@ i.homebutton {
 		width: 0%;
 		display: none;
 	}
+	main {
+		position: absolute;
 
+		left: 0;
+	}
 	section.main_area {
+		position: absolute;
+		top: 15vh;
 		width: 100vw;
 		left: 0;
 	}
