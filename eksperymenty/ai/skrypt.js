@@ -10,9 +10,19 @@ function addToCart(name, price) {
 	cart.push(product)
 }
 
-// funkcja wyświetlająca liczbę produktów w koszyku
-function showCartCount() {
-	console.log('Liczba produktów w koszyku: ' + cart.length)
+// funkcja obliczająca łączną cenę produktów w koszyku
+function calculateTotalPrice() {
+	var totalPrice = 0
+	for (var i = 0; i < cart.length; i++) {
+		totalPrice += parseInt(cart[i].price)
+	}
+	return totalPrice
+}
+
+// funkcja aktualizująca widok koszyka na stronie
+function updateCartView() {
+	var cartLink = document.querySelector('#cart-link')
+	cartLink.textContent = 'Koszyk (' + cart.length + ')'
 }
 
 // obsługa przycisków "Dodaj do koszyka"
@@ -24,7 +34,9 @@ for (var i = 0; i < buttons.length; i++) {
 		var productPrice = this.parentElement.querySelector('.price').textContent
 		// dodanie produktu do koszyka
 		addToCart(productName, productPrice)
-		// wyświetlenie liczby produktów w koszyku
-		showCartCount()
+		// obliczenie i wyświetlenie łącznej ceny produktów w koszyku
+		console.log('Łączna cena: ' + calculateTotalPrice() + ' zł')
+		// aktualizacja widoku koszyka na stronie
+		updateCartView()
 	})
 }
