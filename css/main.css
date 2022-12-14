@@ -116,6 +116,11 @@ main .buttons .button span {
   font-size: 60px;
   transition: 0.5s linear;
 }
+main .buttons .button i {
+  color: white;
+  font-size: 60px;
+  transition: 0.5s linear;
+}
 main .buttons .button:active a {
   border: 2px solid royalblue;
   box-shadow: rgb(18, 24, 37) 2px 2px 2px;
@@ -135,17 +140,23 @@ main .buttons .button:hover p {
 main .buttons .button:hover span {
   font-size: 65px;
 }
+main .buttons .button:hover i {
+  font-size: 65px;
+}
 
-@media (max-width: 576px) {
+@media (max-width: 740px) {
   header {
     width: 90%;
     height: 25vh;
   }
   header .title {
-    font-size: 50px;
+    font-size: 25px;
   }
   header .author {
-    font-size: 12px;
+    font-size: 10px;
+  }
+  main {
+    min-height: 75vh;
   }
   main .hello-time p.time,
 main .hello-time p.hello {
@@ -187,5 +198,13 @@ main .hello-time .hello {
   }
   main .buttons {
     width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  header .title {
+    font-size: 35px;
+  }
+  header .author {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=main.css.map */
