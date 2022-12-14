@@ -5,119 +5,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="https://kit.fontawesome.com/cd4104de10.js" crossorigin="anonymous"></script>
-    <title>Witryny - WiA</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martian+Mono">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+
 </head>
 
 <body>
+
     <header>
-        <a href="../index.html" class="home_button"><i class="fa-solid fa-house homebutton"></i></a>
-        <p class=" title">Witryny</p>
+        <a href="../index.html">
+            <p class="title">WiA: ~#</p>
+        </a>
+        <p class="author">Witryny by Piotr Sączewski</p>
     </header>
     <main>
-        <aside>
-            <ul class="subjects">
-                <li><a href="" class="subjects">Witryny i Aplikacje Internetowe</a> </li>
-                <ul class="projects">
-                    <li><a href="./atlas/atlas.html" class="subjects">Atlas</a></li>
-                    <li><a href="./Auta/auta.html" class="subjects">Auta</a></li>
-                    <li><a href="./herby/tabela.html" class="subjects">Herby</a></li>
-                    <li><a href="./odnosniki/odnosniki.html" class="subjects">Odnośniki</a></li>
-                    <li><a href="./slimaki/slimaki.html" class="subjects">Ślimaki</a></li>
-                    <li><a href="./szablon/haslo.html" class="subjects">Szablon</a></li>
-                    <li><a href="./zasada/zasada.html" class="subjects">Zasada</a></li>
-                    <li><a href="./Znaki/znaki.html" class="subjects">Znaki</a></li>
-                    <li><a href="./Mors/index.html" class="subjects">Kawiarnia</a></li>
-                    <li><a href="./choinka/index.html" class="subjects">Choinka</a></li>
-
-                </ul>
-            </ul>
-        </aside>
-        <section class="main_area">
-            <div class="row">
-                <div class="subjects">
-                    <a href="./atlas/atlas.html" class="subject">
-                        <i class="fa-regular fa-file-code"></i>
-                        <p class="subjects">Atlas</p>
-                    </a>
-                </div>
-                <div class="subjects">
-                    <a href="./Auta/auta.html" class="subject">
-                        <i class="fa-regular fa-file-code"></i>
-                        <p class="subjects">Auta</p>
-                    </a>
-                </div>
-                <div class="subjects">
-                    <a href="./herby/tabela.html" class="subject">
-                        <i class="fa-regular fa-file-code"></i>
-                        <p class="subjects">Herby</p>
-                    </a>
-                </div>
-                <div class="subjects">
-                    <a href="./odnosniki/odnosniki.html" class="subject">
-                        <i class="fa-regular fa-file-code"></i>
-                        <p class="subjects">Odnośniki</p>
-                    </a>
-                </div>
+        <div class="head">
+            <div class="hello-time">
+                <p class="hello">Hello there!</p>
+                <p class="time" id="time">
+                    <script src="../js/clock.js"></script>
+                </p>
             </div>
-            <div class="row">
-                <div class="subjects">
-                    <a href="./slimaki/slimaki.html" class="subject">
-                        <i class="fa-regular fa-file-code"></i>
-                        <p class="subjects">Ślimaki</p>
-                    </a>
-                </div>
-                <div class="subjects">
-                    <a href="./szablon/haslo.html" class="subject">
-                        <i class="fa-regular fa-file-code"></i>
-                        <p class="subjects"> Szablon</p>
-                    </a>
-                </div>
-                <div class="subjects">
-                    <a href="./zasada/zasada.html" class="subject">
-                        <i class="fa-regular fa-file-code"></i>
-                        <p class="subjects">Zasada</p>
-                    </a>
-                </div>
-                <div class="subjects">
-                    <a href="./Znaki/znaki.html" class="subject">
-                        <i class="fa-regular fa-file-code"></i>
-                        <p class="subjects">Znaki</p>
-                    </a>
-                </div>
-
+            <div class="date">
+                <p class="date">Today is <span class="date" id="date">
+                        <script src="../js/date.js"></script>
+                    </span></p>
             </div>
-            <div class="row start">
-                <div class="subjects">
-                    <a href="./Mors/index.html" class="subject">
-                        <i class="fa-regular fa-file-code"></i>
-                        <p class="subjects">Kawiarnia</p>
+            <div class="buttons">
+                <div class="button"><a href="./atlas/atlas.html"><span class="material-symbols-rounded">
+                            menu_book</span>
+                        <p>Atlas</p>
+                    </a></div>
+
+                <div class="button"><a href="./Auta/auta.html"><span class="material-symbols-rounded">
+                            directions_car
+                        </span>
+                        <p>Auta</p>
+                    </a>
+
+                </div>
+                <div class="button"><a href="./choinka/index.html"><span class="material-symbols-rounded">
+                            park
+                        </span>
+                        <p>Choinka</p>
                     </a>
                 </div>
-                <div class="subjects">
-                    <a href="./choinka/index.html" class="subject">
-                        <i class="fa-regular fa-file-code"></i>
-                        <p class="subjects">Choinka</p>
+                <div class="button"><a href="herby/tabela.html"><span class="material-symbols-rounded">
+                            shield
+                        </span>
+                        <p>Herby</p>
+                    </a>
+                </div>
+                <div class="button">
+                    <a href="./odnosniki/odnosniki.html">
+                        <span class="material-symbols-rounded">
+                            link
+                        </span>
+                        <p>Odnośniki</p>
+                    </a>
+                </div>
+                <div class="button">
+                    <a href="./slimaki/slimaki.html">
+                        <span class="material-symbols-rounded">
+                            pets
+                        </span>
+                        <p>Ślimaki</p>
+                    </a>
+                </div>
+                <div class="button">
+                    <a href="./szablon/haslo.html">
+                        <span class="material-symbols-rounded">
+                            password
+                        </span>
+                        <p>Hasło</p>
+                    </a>
+                </div>
+                <div class="button">
+                    <a href="./zasada/zasada.html">
+                        <span class="material-symbols-rounded">
+                            <span class="material-symbols-rounded">
+                                skip_previous
+                            </span>
+
+                        </span>
+                        <p>Zasada</p>
+                    </a>
+                </div>
+                <div class="button">
+                    <a href="./Znaki/znaki.html">
+                        <span class="material-symbols-rounded">
+                            directions_alt
+                        </span>
+                        <p>Znaki</p>
                     </a>
                 </div>
 
             </div>
-
-        </section>
+        </div>
     </main>
-    <footer>
-        <p>Piotr Sączewski</p>
-        <!-- <p>@p.saczewski</p>
-        <p>p.saczewski04@gmail.com</p> -->
-    </footer>
 </body>
 
 </html>
-<!-- Wzór elementu
-                <div class="subjects">
-                    <a href="" class="subject">
-                        <img src="" alt="Logo" class="subject_logo">
-                        <p class="subjects"></p>
-                    </a>
-                </div> -->

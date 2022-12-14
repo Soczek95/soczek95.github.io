@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(38, 9, 236);
+}
+
+header {
+  width: 50%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header a {
+  text-decoration: none;
+}
+header .title {
+  font-size: 65px;
+  color: white;
+  font-family: Martian Mono;
+}
+header .author {
+  font-size: 15px;
+  color: white;
+  font-family: Martian Mono;
+}
+
+main {
+  width: 75%;
+  min-height: 60vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: rgb(14, 20, 30);
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 10px;
+}
+main .head {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .head .hello-time {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .head .hello-time .time,
+main .head .hello-time .hello {
+  color: white;
+  margin: 20px;
+  font-family: Martian Mono;
+  font-size: 30px;
+}
+main .head div.date {
+  width: 100%;
+}
+main .head div.date p.date {
+  color: white;
+  margin: 20px;
+  font-family: Martian Mono;
+  font-size: 20px;
+}
+main .head div.date p.date span.date {
+  color: royalblue;
+}
+main .buttons {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+}
+main .buttons .button {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(22, 28, 43);
+  border-radius: 15px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgb(16, 22, 35) 4px 4px 4px;
+  transition: all 0.5s ease-in-out;
+}
+main .buttons .button a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  border-radius: 15px;
+}
+main .buttons .button span {
+  color: white;
+  font-size: 60px;
+  transition: 0.5s linear;
+}
+main .buttons .button:active a {
+  border: 2px solid royalblue;
+  box-shadow: rgb(18, 24, 37) 2px 2px 2px;
+  background-color: rgb(18, 24, 37);
+}
+main .buttons p {
+  margin: 5px;
+  font-size: 13px;
+  color: white;
+  font-family: Martian Mono;
+  text-align: center;
+  transition: 0.3s linear;
+}
+main .buttons .button:hover p {
+  font-size: 15px;
+}
+main .buttons .button:hover span {
+  font-size: 65px;
+}
+
+@media (max-width: 576px) {
+  header {
+    width: 90%;
+    height: 25vh;
+  }
+  header .title {
+    font-size: 50px;
+  }
+  header .author {
+    font-size: 12px;
+  }
+  main .head .hello-time .time,
+main .head .hello-time .hello {
+    margin: 0;
+    font-size: 25px;
+  }
+  main .head div.date {
+    width: 100%;
+  }
+  main .head div.date p.date {
+    margin: 0;
+    margin-top: 7px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 820px) {
+  header {
+    width: 90%;
+  }
+  main .head .hello-time .time,
+main .head .hello-time .hello {
+    margin: 10px;
+    font-size: 35px;
+  }
+  main .head div.date {
+    width: 100%;
+  }
+  main .head div.date p.date {
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  main .buttons {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
