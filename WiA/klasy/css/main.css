@@ -1,0 +1,117 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+}
+header .title {
+  background-color: yellow;
+  width: 80%;
+  height: 45px;
+}
+header .title p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.id {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: red;
+  height: 45vh;
+}
+.id div {
+  width: 80%;
+  height: 80px;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.id div #first {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.id div #second {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.class {
+  background-color: lime;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 10%;
+}
+.class div {
+  background-color: orange;
+  width: 80%;
+  height: 60px;
+  text-transform: uppercase;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.class div p {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-style: italic;
+}
+.class div .first {
+  width: 100%;
+  justify-content: center;
+  color: gray;
+}
+.class div .second {
+  width: 100%;
+  justify-content: left;
+  color: darkgray;
+}
+.class div .thrid {
+  justify-content: right;
+  color: lightgray;
+  text-transform: lowercase;
+  width: 100%;
+}
+.class .first {
+  width: 80%;
+}
+.class .second {
+  width: 60%;
+}
+.class .thrid {
+  width: 40%;
+}/*# sourceMappingURL=main.css.map */
