@@ -1,0 +1,225 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: #21d4fd;
+	background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	p {
+		height: 35vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 70px;
+		color: white;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	main {
+		padding: 30px;
+		background-color: #222424;
+		width: 80%;
+		height: 65vh;
+		border-radius: 20px 20px 0 0;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+		div {
+			background-color: white;
+			border-radius: 20px;
+		}
+		.p1 {
+			grid-area: 1 / 1 / 2 / 2;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			div {
+				width: 60px;
+				height: 60px;
+				border: 1px solid black;
+				border-radius: 0;
+			}
+			.red {
+				background-color: red;
+			}
+			.yellow {
+				background-color: yellow;
+			}
+		}
+		.p2 {
+			grid-area: 1 / 2 / 2 / 3;
+
+			display: grid;
+			grid-template-columns: repeat(2, 60px);
+			grid-template-rows: repeat(2, 60px);
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;
+			justify-content: center;
+			align-items: center;
+			place-content: center;
+
+			div {
+				width: 60px;
+				height: 60px;
+				border: 1px solid black;
+				border-radius: 0;
+			}
+			.p2-div1 {
+				grid-area: 1 / 1 / 2 / 2;
+				background-color: red;
+			}
+			.p2-div2 {
+				grid-area: 1 / 2 / 2 / 3;
+				background-color: black;
+			}
+			.p2-div3 {
+				grid-area: 2 / 1 / 3 / 2;
+				background-color: black;
+			}
+			.p2-div4 {
+				grid-area: 2 / 2 / 3 / 3;
+				background-color: red;
+			}
+		}
+		.p3 {
+			grid-area: 1 / 3 / 2 / 4;
+
+			display: grid;
+			grid-template-columns: repeat(3, 60px);
+			grid-template-rows: repeat(3, 60px);
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;
+			justify-content: center;
+			align-items: center;
+			place-content: center;
+			.p3-div1 {
+				grid-area: 1 / 1 / 2 / 2;
+				background-color: yellow;
+			}
+			.p3-div2 {
+				grid-area: 1 / 3 / 2 / 4;
+				background-color: blue;
+			}
+			.p3-div3 {
+				grid-area: 2 / 2 / 3 / 3;
+				background-color: red;
+			}
+			.p3-div4 {
+				grid-area: 3 / 1 / 3 / 2;
+				background-color: purple;
+			}
+			.p3-div5 {
+				grid-area: 3 / 3 / 4 / 4;
+				background-color: green;
+			}
+			div {
+				width: 60px;
+				height: 60px;
+				border: 1px solid black;
+				border-radius: 0;
+			}
+		}
+		.p4 {
+			grid-area: 2 / 1 / 3 / 2;
+
+			display: grid;
+			grid-template-columns: repeat(6, 30px);
+			grid-template-rows: repeat(6, 30px);
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;
+			justify-content: center;
+
+			place-content: center;
+			div {
+				border: 1px solid black;
+				border-radius: 0;
+			}
+			.p4-div1 {
+				grid-area: 1 / 1 / 7 / 7;
+				background-color: green;
+			}
+			.p4-div2 {
+				grid-area: 2 / 2 / 6 / 6;
+				background-color: teal;
+			}
+			.p4-div3 {
+				grid-area: 2 / 2 / 4 / 4;
+				background-color: gold;
+			}
+		}
+		.p5 {
+			grid-area: 2 / 2 / 3 / 3;
+
+			display: grid;
+			grid-template-columns: repeat(6, 30px);
+			grid-template-rows: repeat(6, 30px);
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;
+			justify-content: center;
+			place-content: center;
+
+			div {
+				border: 1px solid black;
+				border-radius: 30px;
+			}
+
+			.p5-div1 {
+				grid-area: 2 / 2 / 4 / 4;
+				background-color: rgb(202, 0, 93);
+			}
+			.p5-div2 {
+				grid-area: 3 / 3 / 5 / 5;
+				background-color: rgb(136, 56, 132);
+			}
+			.p5-div3 {
+				grid-area: 4 / 4 / 6 / 6;
+				background-color: rgb(20, 36, 150);
+			}
+		}
+		.p6 {
+			grid-area: 2 / 3 / 3 / 4;
+			display: grid;
+			grid-template-columns: repeat(6, 30px);
+			grid-template-rows: repeat(3, 30px);
+			grid-column-gap: 7px;
+			grid-row-gap: 7px;
+			place-content: center;
+
+			div {
+				border-radius: 40px;
+				background-color: transparent;
+			}
+			.p6-div1 {
+				grid-area: 1 / 1 / 3 / 3;
+				border: 7px solid rgb(25, 108, 188);
+			}
+			.p6-div2 {
+				grid-area: 2 / 2 / 4 / 4;
+				border: 7px solid rgb(250, 162, 38);
+			}
+			.p6-div3 {
+				grid-area: 1 / 3 / 3 / 5;
+				border: 7px solid rgb(0, 0, 0);
+			}
+			.p6-div4 {
+				grid-area: 2 / 4 / 4 / 6;
+				border: 7px solid rgb(20, 153, 64);
+			}
+			.p6-div5 {
+				grid-area: 1 / 5 / 3 / 7;
+				border: 7px solid rgb(230, 25, 61);
+			}
+		}
+	}
+}
