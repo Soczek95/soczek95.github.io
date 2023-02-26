@@ -40,7 +40,6 @@ header .author {
 main {
   width: 75%;
   min-height: 60vh;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   background-color: rgb(14, 20, 30);
@@ -121,8 +120,10 @@ main .buttons .button i {
   font-size: 60px;
   transition: 0.5s linear;
 }
+main .buttons .button:active {
+  scale: 105%;
+}
 main .buttons .button:active a {
-  border: 2px solid royalblue;
   box-shadow: rgb(18, 24, 37) 2px 2px 2px;
   background-color: rgb(18, 24, 37);
 }
@@ -134,14 +135,9 @@ main .buttons p {
   text-align: center;
   transition: 0.3s linear;
 }
-main .buttons .button:hover p {
-  font-size: 15px;
-}
-main .buttons .button:hover span {
-  font-size: 65px;
-}
-main .buttons .button:hover i {
-  font-size: 65px;
+main .buttons .button:hover {
+  position: relative;
+  scale: 110%;
 }
 
 @media (max-width: 740px) {
@@ -159,7 +155,7 @@ main .buttons .button:hover i {
     min-height: 75vh;
   }
   main .hello-time p.time,
-main .hello-time p.hello {
+  main .hello-time p.hello {
     margin: 0;
     font-size: 20px;
   }
@@ -184,7 +180,7 @@ main .hello-time p.hello {
     width: 90%;
   }
   main .hello-time .time,
-main .hello-time .hello {
+  main .hello-time .hello {
     margin: 10px;
     font-size: 35px;
   }

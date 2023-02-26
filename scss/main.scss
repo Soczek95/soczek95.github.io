@@ -83,6 +83,7 @@ main {
 		min-height: 40vh;
 
 		.button {
+			// position: relative;
 			width: 150px;
 			height: 150px;
 			background-color: rgb(22, 28, 43);
@@ -118,8 +119,8 @@ main {
 			}
 		}
 		.button:active {
+			scale: 105%;
 			a {
-				border: 2px solid royalblue;
 				box-shadow: rgb(18, 24, 37) 2px 2px 2px;
 				background-color: rgb(18, 24, 37);
 			}
@@ -133,15 +134,8 @@ main {
 			transition: 0.3s linear;
 		}
 		.button:hover {
-			p {
-				font-size: 15px;
-			}
-			span {
-				font-size: 65px;
-			}
-			i {
-				font-size: 65px;
-			}
+			position: relative;
+			scale: 110%;
 		}
 	}
 }
