@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #042940;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  min-width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #d6d58e;
+}
+body .month1,
+body .month2,
+body .month3 {
+  border: 3px solid #042940;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  min-width: 30vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #9fc131;
+  padding: 10px;
+}
+body .month1 table,
+body .month2 table,
+body .month3 table {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #dbf227;
+}
+body .month1 tr,
+body .month2 tr,
+body .month3 tr {
+  text-align: center;
+}
+body .month1 img,
+body .month2 img,
+body .month3 img {
+  max-width: 25vw;
+  max-height: 50vh;
+  margin: 10px;
+  border: 10px solid #dbf227;
+  border-radius: 5px;
+}/*# sourceMappingURL=main.css.map */
