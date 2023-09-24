@@ -21,7 +21,7 @@ function date() {
 		document.write('<table>')
 		document.write('<tr>')
 		for (i = 1; i <= 28; i++) {
-			document.write('<td>' + i + '</td>')
+			document.write('<td><p>' + i + '</p></td>')
 			if (i % 7 == 0) {
 				document.write('</tr><tr>')
 			}
@@ -31,7 +31,7 @@ function date() {
 		document.write('<table>')
 		document.write('<tr>')
 		for (i = 1; i <= 30; i++) {
-			document.write('<td>' + i + '</td>')
+			document.write('<td><p>' + i + '</p></td>')
 			if (i % 7 == 0) {
 				document.write('</tr><tr>')
 			}
@@ -41,7 +41,7 @@ function date() {
 		document.write('<table>')
 		document.write('<tr>')
 		for (i = 1; i <= 31; i++) {
-			document.write('<td>' + i + '</td>')
+			document.write('<td><p>' + i + '</p></td>')
 			if (i % 7 == 0) {
 				document.write('</tr><tr>')
 			}
@@ -56,7 +56,7 @@ function date() {
 		document.write('<table>')
 		document.write('<tr>')
 		for (i = 1; i <= 28; i++) {
-			document.write('<td id=day' + i + '>' + i + '</td>')
+			document.write('<td id=day' + i + '><p>' + i + '</p></td>')
 			if (i % 7 == 0) {
 				document.write('</tr><tr>')
 			}
@@ -66,7 +66,7 @@ function date() {
 		document.write('<table>')
 		document.write('<tr>')
 		for (i = 1; i <= 30; i++) {
-			document.write('<td id=day' + i + '>' + i + '</td>')
+			document.write('<td id=day' + i + '><p>' + i + '</p></td>')
 			if (i % 7 == 0) {
 				document.write('</tr><tr>')
 			}
@@ -76,7 +76,7 @@ function date() {
 		document.write('<table>')
 		document.write('<tr>')
 		for (i = 1; i <= 31; i++) {
-			document.write('<td id=day' + i + '>' + i + '</td>')
+			document.write('<td id=day' + i + '><p>' + i + '</p></td>')
 			if (i % 7 == 0) {
 				document.write('</tr><tr>')
 			}
@@ -92,7 +92,7 @@ function date() {
 		document.write('<table>')
 		document.write('<tr>')
 		for (i = 1; i <= 28; i++) {
-			document.write('<td>' + i + '</td>')
+			document.write('<td><p>' + i + '</p></td>')
 			if (i % 7 == 0) {
 				document.write('</tr><tr>')
 			}
@@ -102,7 +102,7 @@ function date() {
 		document.write('<table>')
 		document.write('<tr>')
 		for (i = 1; i <= 30; i++) {
-			document.write('<td>' + i + '</td>')
+			document.write('<td><p>' + i + '</p></td>')
 			if (i % 7 == 0) {
 				document.write('</tr><tr>')
 			}
@@ -112,7 +112,7 @@ function date() {
 		document.write('<table>')
 		document.write('<tr>')
 		for (i = 1; i <= 31; i++) {
-			document.write('<td>' + i + '</td>')
+			document.write('<td><p>' + i + '</p></td>')
 			if (i % 7 == 0) {
 				document.write('</tr><tr>')
 			}
