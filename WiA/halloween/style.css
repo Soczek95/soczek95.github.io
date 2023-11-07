@@ -1,0 +1,24 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: Arial, sans-serif;
+}
+h1 {
+	text-align: center;
+	font-size: 4rem;
+	margin-top: 2rem;
+	font-family: 'Creepster', cursive;
+	color: #ffb047;
+}
+
+p {
+	font-size: 2rem;
+	margin: 2rem;
+	text-align: center;
+	font-family: 'Creepster', cursive;
+}
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
