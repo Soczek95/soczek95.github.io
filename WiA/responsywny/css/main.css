@@ -1,0 +1,37 @@
+.container {
+	display: flex;
+}
+
+.column {
+	flex: 1;
+	padding: 10px;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+    background-color: deepskyblue;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.object {
+	width: 350px;
+	height: 200px;
+	background-color: deeppink;
+	margin: 40px;
+	border-radius: 30px;
+}
+
+@media (max-width: 1000px) {
+	.container {
+		flex-direction: column;
+	}
+	.object {
+		width: 80vw;
+	}
+}
